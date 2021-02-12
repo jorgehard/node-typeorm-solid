@@ -1,0 +1,15 @@
+version: "3"
+
+services:
+  mysqlSolid:
+    image: mysql:5.7
+    container_name: mysqlSolid
+    ports:
+      - "3306:3306"
+    volumes:
+      - /var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: password123
+      MYSQL_DATABASE: fake-buscape
+      MYSQL_USER: root
+      MYSQL_PASSWORD: password123
